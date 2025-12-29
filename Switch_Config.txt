@@ -1,0 +1,54 @@
+!
+version 15.0
+...
+hostname Switch
+!
+vlan 10
+ name MARKETING
+vlan 20
+ name ADMIN
+vlan 30
+ name IT
+vlan 40
+ name SALES
+!
+interface FastEthernet0/1
+ switchport mode trunk
+!
+interface FastEthernet0/2
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/4
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/5
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/6
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/7
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/10
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/8
+ switchport access vlan 40
+ switchport mode access
+!
+interface FastEthernet0/9
+ switchport access vlan 40
+ switchport mode access
+!
+end
