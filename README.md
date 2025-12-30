@@ -32,18 +32,18 @@
    • Layer 3: IP routing from IT Server to IT PC.
    • Layer 4/7: UDP transport for DNS queries resolving sales.carscity.local.
    
-6. Engineering Analysis: Signal Quantization
+5. Engineering Analysis: Signal Quantization
 
    A study was conducted on converting analog signals to digital outputs, comparing 3-bit and 8-bit precision.
    • 3-bit depth: Resulted in 8 levels, showing visible rounding errors (signal fidelity loss).
    • 8-bit depth: Utilized 256 levels for significantly higher precision and signal accuracy.
 
-7. How to Run the Simulation
+6. How to Run the Simulation
    
-   i. Download and Install: Ensure you have Cisco Packet Tracer installed.
-   ii. Open Project: Download the .pkt file from this repository and open it.
-   iii. Verify Services:
+   1. Download and Install: Ensure you have Cisco Packet Tracer installed.
+   2. Open Project: Download the .pkt file from this repository and open it.
+   3. Verify Services:
      - Open any departmental PC (e.g., Marketing PC).
      - Go to Desktop > Web Browser and enter http://192.100.30.98.
      - Open the Command Prompt and type nslookup sales.carscity.local to verify DNS resolution.
-   iv. Test Connectivity: Use the ping command to test communication between different VLANs (e.g., pinging from Admin PC to IT Server).
+   4. Test Connectivity: Use the ping command to test communication between different VLANs (e.g., pinging from Admin PC to IT Server).
