@@ -24,21 +24,21 @@
    Connectivity Tests: Success was verified through internal and cross-departmental pings:
    • Intra-VLAN: Marketing PC to Gateway (192.100.30.1) — Success.
    • Inter-VLAN: Admin PC to IT Server (192.100.30.66) — Success.
-
-   Protocol Deep-Dive (PDU Analysis)
+   
+ - Protocol Deep-Dive (PDU Analysis)
 
    I performed deep-packet inspection at the switch to verify the OSI model encapsulation:
    • Layer 2: Ethernet II framing with Source/Destination MAC addresses.
    • Layer 3: IP routing from IT Server to IT PC.
    • Layer 4/7: UDP transport for DNS queries resolving sales.carscity.local.
    
-5. Engineering Analysis: Signal Quantization
+6. Engineering Analysis: Signal Quantization
 
    A study was conducted on converting analog signals to digital outputs, comparing 3-bit and 8-bit precision.
    • 3-bit depth: Resulted in 8 levels, showing visible rounding errors (signal fidelity loss).
    • 8-bit depth: Utilized 256 levels for significantly higher precision and signal accuracy.
 
-6. How to Run the Simulation
+7. How to Run the Simulation
    
    i. Download and Install: Ensure you have Cisco Packet Tracer installed.
    ii. Open Project: Download the .pkt file from this repository and open it.
